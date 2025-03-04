@@ -1,8 +1,5 @@
 <div [ngClass]="{dark:dark}"
   class="flex-auto flex-col flex dark:bg-gray-700 bg-gray-100 dark:text-amber-100 text-gray-800">
-  <div class="shadow-sm h-12 flex-row flex bg-amber-100 dark:bg-gray-800 p-1">
-    <span class="flex-auto">Header</span>
-    <span><button (click)="toggleDarkMode()">Toggle Dark Mode</button></span>
-  </div>
+  <app-header (isDark)="dark=$event"></app-header>
   <h1>Hallo</h1>
 </div>

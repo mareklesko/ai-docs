@@ -3,10 +3,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
       "controls": [
         "./dist/controls"
-      ]
+      ],
+      "controls/*": [
+        "./dist/controls/*"
+      ],
     },
     "outDir": "./dist/out-tsc",
     "strict": true,
