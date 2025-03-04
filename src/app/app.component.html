@@ -1,5 +1,7 @@
 <div [ngClass]="{dark:dark}"
   class="flex-auto flex-col flex dark:bg-gray-700 bg-gray-100 dark:text-amber-100 text-gray-800">
   <app-header (isDark)="dark=$event"></app-header>
-  <h1>Hallo</h1>
+  <div class="flex-auto">
+    <router-outlet></router-outlet>
+  </div>
 </div>
